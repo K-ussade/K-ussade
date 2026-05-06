@@ -48,7 +48,7 @@ Forbidden public material includes donor private data, student data, school priv
 | --- | --- | --- |
 | `218-network-web` | Public Foundation website source for `218.network`. | Public source or approved mirror when created. |
 | [`foundation-governance`](https://github.com/K-ussade/foundation-governance) | Foundation governance, independence, and public trust documentation. | Scaffolded public governance docs; private drafts excluded. |
-| `foundation-transparency-reports` | Public reporting on governance, release decisions, safety reviews, and impact. | Public reports after review. |
+| [`foundation-transparency-reports`](https://github.com/K-ussade/foundation-transparency-reports) | Public reporting on governance, release decisions, safety reviews, and impact. | Scaffolded report templates and policies; reports only after review. |
 | `civic-ai-safety-notes` | Civic AI safety notes, limitations, and release review guidance. | Public notes; no sealed methods. |
 | `foundation-model-cards` | Model card standards and future Hugging Face model companions. | Planned or scaffolded cards until models are released. |
 | `foundation-dataset-cards` | Dataset card standards, provenance summaries, and privacy exclusions. | Planned or scaffolded cards until datasets are released. |
