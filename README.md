@@ -53,6 +53,10 @@ Forbidden public material includes donor private data, student data, school priv
 | `foundation-model-cards` | Model card standards and future Hugging Face model companions. | Planned or scaffolded cards until models are released. |
 | `foundation-dataset-cards` | Dataset card standards, provenance summaries, and privacy exclusions. | Planned or scaffolded cards until datasets are released. |
 
+## Visuals
+
+The public account architecture and trust-boundary maps are in [VISUALS.md](VISUALS.md).
+
 ## Release Discipline
 
 Hugging Face is a public release surface for reviewed models, datasets, and Spaces. It is not the canonical home for sealed model development, private training corpora, unreleased model weights, private telemetry, or sensitive operational materials.
