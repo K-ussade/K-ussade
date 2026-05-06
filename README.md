@@ -53,6 +53,12 @@ Forbidden public material includes donor private data, student data, school priv
 | [`foundation-model-cards`](https://github.com/K-ussade/foundation-model-cards) | Model card standards and future Hugging Face model companions. | Scaffolded model-card standards; all model companions remain planned. |
 | [`foundation-dataset-cards`](https://github.com/K-ussade/foundation-dataset-cards) | Dataset card standards, provenance summaries, and privacy exclusions. | Scaffolded dataset-card standards; all dataset companions remain planned. |
 
+## Standards Repositories
+
+| Repository | Role | Status |
+| --- | --- | --- |
+| [`foundation-doc-templates`](https://github.com/K-ussade/foundation-doc-templates) | Public-safe documentation templates, boundary language, graph structure, and reuse rules. | Scaffolded template standards; placeholder examples only. |
+
 ## Visuals
 
 The public account architecture and trust-boundary maps are in [VISUALS.md](VISUALS.md).
