@@ -23,6 +23,12 @@ These descriptions are the first recommended GitHub pins for Alexandra Caussade'
 - Do not pin toy repos, empty repos without boundary-aware READMEs, private mirrors, or sealed work.
 - Keep at least three pinned repositories focused on Foundation governance, transparency, or public trust.
 
+## Standards Pin Candidate
+
+| Repository | GitHub Description | Profile Role | Status Language |
+| --- | --- | --- | --- |
+| [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Public Mermaid graph classes, templates, examples, and rendering rules for 218 Network Foundation repositories. | Makes the account visuals reusable across public Foundation repos. | Scaffolded graph standards; no private topology or sealed diagrams. |
+
 ## Public Boundary For Pinned Repositories
 
 Allowed public material:

@@ -58,6 +58,7 @@ Forbidden public material includes donor private data, student data, school priv
 | Repository | Role | Status |
 | --- | --- | --- |
 | [`foundation-doc-templates`](https://github.com/K-ussade/foundation-doc-templates) | Public-safe documentation templates, boundary language, graph structure, and reuse rules. | Scaffolded template standards; placeholder examples only. |
+| [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Public Mermaid graph classes, templates, examples, and rendering rules for Foundation repositories. | Scaffolded graph standards; no private topology or sealed diagrams. |
 
 ## Visuals
 
