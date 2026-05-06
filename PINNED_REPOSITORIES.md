@@ -13,7 +13,7 @@ These descriptions are the first recommended GitHub pins for Alexandra Caussade'
 | 3 | [`foundation-transparency-reports`](https://github.com/K-ussade/foundation-transparency-reports) | Public transparency reports for Foundation governance, release decisions, safety reviews, and impact reporting. | Signals accountability and public reporting discipline. | Scaffolded report templates and policies; reports only after review. |
 | 4 | [`civic-ai-safety-notes`](https://github.com/K-ussade/civic-ai-safety-notes) | Public civic AI safety notes, limitation statements, release review gates, and public reliance boundaries. | Makes safety visible before models, datasets, or demos are released. | Scaffolded public safety notes; no sealed methods or private evaluations. |
 | 5 | [`foundation-model-cards`](https://github.com/K-ussade/foundation-model-cards) | Model card standards and companion documentation for planned Foundation Hugging Face models. | Prepares model releases with card-first governance. | Scaffolded model-card standards; all model companions remain planned. |
-| 6 | `foundation-dataset-cards` | Dataset card standards, provenance summaries, privacy exclusions, and maintenance notes for public datasets. | Prepares dataset releases with privacy and provenance discipline. | Planned or scaffolded cards until datasets are released. |
+| 6 | [`foundation-dataset-cards`](https://github.com/K-ussade/foundation-dataset-cards) | Dataset card standards, provenance summaries, privacy exclusions, and maintenance notes for public datasets. | Prepares dataset releases with privacy and provenance discipline. | Scaffolded dataset-card standards; all dataset companions remain planned. |
 
 ## Repository Description Rules
 
