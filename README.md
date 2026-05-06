@@ -50,7 +50,7 @@ Forbidden public material includes donor private data, student data, school priv
 | [`foundation-governance`](https://github.com/K-ussade/foundation-governance) | Foundation governance, independence, and public trust documentation. | Scaffolded public governance docs; private drafts excluded. |
 | [`foundation-transparency-reports`](https://github.com/K-ussade/foundation-transparency-reports) | Public reporting on governance, release decisions, safety reviews, and impact. | Scaffolded report templates and policies; reports only after review. |
 | [`civic-ai-safety-notes`](https://github.com/K-ussade/civic-ai-safety-notes) | Civic AI safety notes, limitations, and release review guidance. | Scaffolded public safety notes; no sealed methods or private evaluations. |
-| `foundation-model-cards` | Model card standards and future Hugging Face model companions. | Planned or scaffolded cards until models are released. |
+| [`foundation-model-cards`](https://github.com/K-ussade/foundation-model-cards) | Model card standards and future Hugging Face model companions. | Scaffolded model-card standards; all model companions remain planned. |
 | `foundation-dataset-cards` | Dataset card standards, provenance summaries, and privacy exclusions. | Planned or scaffolded cards until datasets are released. |
 
 ## Visuals
