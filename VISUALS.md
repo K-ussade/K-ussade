@@ -9,7 +9,7 @@ These Mermaid diagrams make the public account architecture visible without crea
 ```mermaid
 flowchart LR
   subgraph identity["Public Technical Identity"]
-    alexandra["Alexandra Caussade<br/>Founder: 218 Network Foundation<br/>Co-Founder: YOSO-YAi LLC"]:::authority
+    alexandra["Alexandra Caussade<br/>Founder: 218 Network Foundation<br/>Co-Founder: YOSO-YAi LLC<br/>Autonomous AI Operator<br/>Civic Governance Lead"]:::authority
     profile["GitHub profile<br/>K-ussade"]:::public
   end
 
@@ -23,10 +23,11 @@ flowchart LR
   end
 
   subgraph github["GitHub Public Repository Architecture"]
-    publicFace["Foundation public face repos<br/>218-network-web planned<br/>foundation-governance scaffolded<br/>foundation-programs-public planned<br/>foundation-transparency-reports scaffolded"]:::foundation
-    aiCompanions["AI companion repos<br/>foundation-model-cards scaffolded<br/>foundation-dataset-cards scaffolded<br/>foundation-spaces planned<br/>civic-ai-safety-notes scaffolded"]:::release
-    standards["Templates and standards<br/>foundation-doc-templates scaffolded<br/>foundation-graph-kit scaffolded<br/>foundation-public-roadmap planned"]:::public
-    programDocs["Future technical public docs<br/>neurona-public-docs<br/>cleanup-data-public<br/>schools-public-docs"]:::foundation
+    publicFace["Foundation public face repos<br/>218-network-web planned<br/>foundation-governance published scaffold<br/>foundation-programs-public published scaffold<br/>foundation-transparency-reports published scaffold<br/>foundation-public-reports published scaffold"]:::foundation
+    aiCompanions["AI companion repos<br/>foundation-model-cards published scaffold<br/>foundation-dataset-cards published scaffold<br/>foundation-spaces published scaffold<br/>civic-ai-safety-notes published scaffold<br/>foundation-huggingface-index published scaffold"]:::release
+    standards["Templates and standards<br/>foundation-doc-templates published scaffold<br/>foundation-graph-kit published scaffold<br/>foundation-public-roadmap published scaffold"]:::public
+    programDocs["Program technical public docs<br/>neurona-public-docs published scaffold<br/>cleanup-data-public published scaffold<br/>schools-public-docs published scaffold"]:::foundation
+    proofOps["Proof and agentic workflow repos<br/>foundation-portfolio-proof published scaffold<br/>autonomous-ai-ops-kit published scaffold<br/>research-agent-workflows published scaffold<br/>trading-agent-governance published scaffold"]:::public
   end
 
   subgraph hf["Hugging Face Release Surface"]
@@ -40,6 +41,7 @@ flowchart LR
   profile --> aiCompanions
   profile --> standards
   profile --> programDocs
+  profile --> proofOps
   publicFace --> network
   aiCompanions -. cards and notes .-> models
   aiCompanions -. cards and notes .-> datasets
@@ -49,6 +51,9 @@ flowchart LR
   programDocs -. release context .-> models
   programDocs -. release context .-> datasets
   programDocs -. demo context .-> spaces
+  proofOps -. review-required proof links .-> models
+  proofOps -. review-required proof links .-> datasets
+  proofOps -. review-required proof links .-> spaces
   alexandra -. boundary reference .-> yoso
   alexandra -. boundary reference .-> yosor
   yoso -. distinct from Foundation .-> network
@@ -91,6 +96,8 @@ flowchart LR
     secrets["Secrets, tokens, API keys"]:::sealed
     infra["Precise sensitive infrastructure locations"]:::sealed
     neurona["Security-sensitive NEURONA operational details"]:::sealed
+    trading["Trading strategies, signals,<br/>returns, balances, account data,<br/>performance claims"]:::sealed
+    autonomous["Live autonomous agents,<br/>runnable orchestration,<br/>private prompts or outputs"]:::sealed
   end
 
   subgraph gate["Review Gate"]
@@ -132,6 +139,8 @@ flowchart LR
   secrets -. blocked .-> boundary
   infra -. blocked .-> boundary
   neurona -. blocked .-> boundary
+  trading -. blocked .-> boundary
+  autonomous -. blocked .-> boundary
 
   classDef foundation fill:#fff3d7,stroke:#9a6b00,color:#463100;
   classDef public fill:#edf7ed,stroke:#3a7d3a,color:#1f3d1f;
@@ -151,4 +160,4 @@ flowchart LR
 | Space demo flow | `repo-blueprint/account-surfaces/graphs/space-demo-flow.md` |
 | GitHub to Hugging Face link map | `repo-blueprint/account-surfaces/graphs/github-to-huggingface-link-map.md` |
 
-The public visuals intentionally show planned architecture and review gates. They do not claim that future models, datasets, Spaces, or Foundation program repositories already exist.
+The public visuals intentionally show published scaffolds, planned architecture, and review gates. They do not claim that future models, datasets, Spaces, schools, NEURONAs, deployments, services, trading systems, or Foundation program operations are live.

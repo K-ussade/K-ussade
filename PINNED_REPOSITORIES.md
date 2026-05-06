@@ -17,7 +17,7 @@ These descriptions are the first recommended GitHub pins for Alexandra Caussade'
 
 ## Repository Description Rules
 
-- Use `planned`, `scaffolded`, `experimental`, `released`, or `deprecated` in README status sections.
+- Use `planned`, `scaffolded`, `published`, `released`, `paused`, `deprecated`, or `private/not-public` in README status sections.
 - Do not use repository descriptions that imply unreleased models, datasets, Spaces, benchmarks, or deployments exist.
 - Do not describe Hugging Face artifacts as released until cards, release notes, safety notes, companion links, and governance review status exist.
 - Do not pin toy repos, empty repos without boundary-aware READMEs, private mirrors, or sealed work.
@@ -28,14 +28,29 @@ These descriptions are the first recommended GitHub pins for Alexandra Caussade'
 | Repository | GitHub Description | Profile Role | Status Language |
 | --- | --- | --- | --- |
 | [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Public Mermaid graph classes, templates, examples, and rendering rules for 218 Network Foundation repositories. | Makes the account visuals reusable across public Foundation repos. | Scaffolded graph standards; no private topology or sealed diagrams. |
+| [`foundation-public-roadmap`](https://github.com/K-ussade/foundation-public-roadmap) | Public roadmap, status ledger, review gates, and release-readiness flow. | Makes planned/scaffolded/published/released boundaries inspectable. | Published scaffold; future artifacts remain planned unless reviewed and linked. |
+
+## Additional Published Proof Candidates
+
+| Repository | GitHub Description | Profile Role | Status Language |
+| --- | --- | --- | --- |
+| [`foundation-doc-templates`](https://github.com/K-ussade/foundation-doc-templates) | Public-safe documentation templates, boundary language, graph structure, and reuse rules. | Shows repeatable documentation discipline. | Published scaffold; templates and synthetic examples only. |
+| [`foundation-spaces`](https://github.com/K-ussade/foundation-spaces) | README scaffolds, safety banners, and release checklists for planned Hugging Face Spaces. | Shows demo release-readiness without claiming live demos. | Published scaffold; no runnable app code or live Space. |
+| [`foundation-public-reports`](https://github.com/K-ussade/foundation-public-reports) | Public report templates, transparency report structure, release-note templates, and synthetic examples. | Shows public reporting discipline. | Published scaffold; no real Foundation reports or impact claims. |
+| [`foundation-programs-public`](https://github.com/K-ussade/foundation-programs-public) | Public-safe program documentation scaffold for cleanup, NEURONA mesh, and Foundation schools. | Shows public program boundaries without exposing private operations. | Published scaffold; no live programs, schools, NEURONAs, services, or outcomes. |
+| [`foundation-huggingface-index`](https://github.com/K-ussade/foundation-huggingface-index) | Public index for planned Foundation Hugging Face models, datasets, Spaces, and release-readiness. | Makes planned-vs-released HF status inspectable. | Published scaffold; no weights, datasets, live Spaces, or released HF artifact claim. |
+| [`neurona-public-docs`](https://github.com/K-ussade/neurona-public-docs) | Public-safe NEURONA overview, status language, safety language, and future report structure. | Shows NEURONA public boundary discipline. | Published scaffold; no PCB, mesh security, exact location, deployment, or private telemetry detail. |
+| [`cleanup-data-public`](https://github.com/K-ussade/cleanup-data-public) | Cleanup schema, sanitation, dataset release-readiness, and synthetic examples. | Shows cleanup data sanitation boundaries. | Published scaffold; no real cleanup data or released dataset. |
+| [`schools-public-docs`](https://github.com/K-ussade/schools-public-docs) | School public-doc standards, student-data exclusion, and report companion structure. | Shows school/student-data boundary discipline. | Published scaffold; no student data, school private operations, or open-school claim. |
+| [`foundation-portfolio-proof`](https://github.com/K-ussade/foundation-portfolio-proof) | Public proof index connecting GitHub repos and planned Hugging Face status for later review. | Shows proof mapping without active monetization. | Published scaffold; no live Upwork profile, active service, released HF artifact, or client outcome claim. |
 
 ## Autonomous AI Operations Pin Candidates
 
 | Repository | GitHub Description | Profile Role | Status Language |
 | --- | --- | --- | --- |
-| [`autonomous-ai-ops-kit`](https://github.com/K-ussade/autonomous-ai-ops-kit) | Public-safe operations documentation kit for supervised AI workflows, review gates, runbooks, incidents, and audit fields. | Shows AI operator discipline without publishing live agents or private operations. | Scaffolded / published documentation only; no live autonomous agents or runtime orchestration. |
-| [`research-agent-workflows`](https://github.com/K-ussade/research-agent-workflows) | Public-safe AI-assisted research workflows for source review, citation logs, editorial gates, publishing checklists, and disclosure. | Shows research and agentic publishing workflow discipline without private notes or autonomous publishing. | Scaffolded / published documentation only; no private research or scraped copyrighted content. |
-| [`trading-agent-governance`](https://github.com/K-ussade/trading-agent-governance) | Public-safe governance documentation for supervised trading-agent research systems, risk review, audit logs, and claim review. | Shows governance discipline without trading bots, strategies, signals, account data, or financial advice. | Scaffolded / published governance docs only; not financial advice, not investment advice, not a trading bot, and not a trading system. |
+| [`autonomous-ai-ops-kit`](https://github.com/K-ussade/autonomous-ai-ops-kit) | Public-safe operations documentation kit for supervised AI workflows, review gates, runbooks, incidents, and audit fields. | Shows AI operator discipline without publishing live agents or private operations. | Published scaffold only; no live autonomous agents or runtime orchestration. |
+| [`research-agent-workflows`](https://github.com/K-ussade/research-agent-workflows) | Public-safe AI-assisted research workflows for source review, citation logs, editorial gates, publishing checklists, and disclosure. | Shows research and agentic publishing workflow discipline without private notes or autonomous publishing. | Published scaffold only; no private research or scraped copyrighted content. |
+| [`trading-agent-governance`](https://github.com/K-ussade/trading-agent-governance) | Public-safe governance documentation for supervised trading-agent research systems, risk review, audit logs, and claim review. | Shows governance discipline without trading bots, strategies, signals, account data, or financial advice. | Published scaffold only; not financial advice, not investment advice, not a trading bot, and not a trading system. |
 
 ## Public Boundary For Pinned Repositories
 
