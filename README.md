@@ -19,6 +19,9 @@ The 218 Network Foundation is independent from YOSO-YAi LLC. YOSOR is a product 
 
 - Foundation governance and public trust documentation
 - Civic AI safety notes and release discipline
+- Autonomous AI operations documentation under human review
+- AI-assisted research workflows with source and editorial review
+- Trading-agent governance documentation without financial advice or trading claims
 - Model card and dataset card standards
 - Public dataset and model release preparation
 - Future Hugging Face Spaces demos with explicit safety boundaries
@@ -42,6 +45,8 @@ Allowed public material includes public Foundation documents, public governance 
 
 Forbidden public material includes donor private data, student data, school private data, volunteer private data, private Foundation operations, sealed YOSO-YAi LLC IP, customer data, unreleased model weights, private training corpora, secrets, tokens, API keys, precise sensitive infrastructure locations, and security-sensitive NEURONA operational details.
 
+For AI operations and trading-agent governance surfaces, forbidden material also includes live autonomous agents, runnable orchestration, private prompts, private model outputs, trading bots, trading systems, trading strategies, signals, financial advice, investment advice, returns, balances, account data, performance claims, return claims, and client outcome claims.
+
 ## Starting Points
 
 | Repository | Role | Status |
@@ -52,6 +57,14 @@ Forbidden public material includes donor private data, student data, school priv
 | [`civic-ai-safety-notes`](https://github.com/K-ussade/civic-ai-safety-notes) | Civic AI safety notes, limitations, and release review guidance. | Scaffolded public safety notes; no sealed methods or private evaluations. |
 | [`foundation-model-cards`](https://github.com/K-ussade/foundation-model-cards) | Model card standards and future Hugging Face model companions. | Scaffolded model-card standards; all model companions remain planned. |
 | [`foundation-dataset-cards`](https://github.com/K-ussade/foundation-dataset-cards) | Dataset card standards, provenance summaries, and privacy exclusions. | Scaffolded dataset-card standards; all dataset companions remain planned. |
+
+## Autonomous AI Operations
+
+| Repository | Role | Status |
+| --- | --- | --- |
+| [`autonomous-ai-ops-kit`](https://github.com/K-ussade/autonomous-ai-ops-kit) | Public-safe operations documentation kit for supervised AI workflows, role cards, task queues, review gates, incident logs, and audit fields. | Scaffolded / published documentation only; no live autonomous agents or runtime orchestration. |
+| [`research-agent-workflows`](https://github.com/K-ussade/research-agent-workflows) | Public-safe AI-assisted research workflow kit for source review, citation tracking, editorial review, publishing gates, and disclosure language. | Scaffolded / published documentation only; no private research, scraped copyrighted content, or autonomous publishing. |
+| [`trading-agent-governance`](https://github.com/K-ussade/trading-agent-governance) | Public-safe governance documentation kit for supervised trading-agent research systems, risk review, human approval, audit fields, claim review, and prohibited-content rules. | Scaffolded / published governance docs only; not financial advice, not investment advice, not a trading bot, and not a trading system. |
 
 ## Standards Repositories
 

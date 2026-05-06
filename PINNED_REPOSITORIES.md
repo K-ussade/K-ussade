@@ -29,6 +29,14 @@ These descriptions are the first recommended GitHub pins for Alexandra Caussade'
 | --- | --- | --- | --- |
 | [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Public Mermaid graph classes, templates, examples, and rendering rules for 218 Network Foundation repositories. | Makes the account visuals reusable across public Foundation repos. | Scaffolded graph standards; no private topology or sealed diagrams. |
 
+## Autonomous AI Operations Pin Candidates
+
+| Repository | GitHub Description | Profile Role | Status Language |
+| --- | --- | --- | --- |
+| [`autonomous-ai-ops-kit`](https://github.com/K-ussade/autonomous-ai-ops-kit) | Public-safe operations documentation kit for supervised AI workflows, review gates, runbooks, incidents, and audit fields. | Shows AI operator discipline without publishing live agents or private operations. | Scaffolded / published documentation only; no live autonomous agents or runtime orchestration. |
+| [`research-agent-workflows`](https://github.com/K-ussade/research-agent-workflows) | Public-safe AI-assisted research workflows for source review, citation logs, editorial gates, publishing checklists, and disclosure. | Shows research and agentic publishing workflow discipline without private notes or autonomous publishing. | Scaffolded / published documentation only; no private research or scraped copyrighted content. |
+| [`trading-agent-governance`](https://github.com/K-ussade/trading-agent-governance) | Public-safe governance documentation for supervised trading-agent research systems, risk review, audit logs, and claim review. | Shows governance discipline without trading bots, strategies, signals, account data, or financial advice. | Scaffolded / published governance docs only; not financial advice, not investment advice, not a trading bot, and not a trading system. |
+
 ## Public Boundary For Pinned Repositories
 
 Allowed public material:
