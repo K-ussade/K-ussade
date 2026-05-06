@@ -23,8 +23,8 @@ flowchart LR
   end
 
   subgraph github["GitHub Public Repository Architecture"]
-    publicFace["Foundation public face repos<br/>218-network-web<br/>foundation-governance<br/>foundation-programs-public<br/>foundation-transparency-reports"]:::foundation
-    aiCompanions["AI companion repos<br/>foundation-model-cards<br/>foundation-dataset-cards<br/>foundation-spaces<br/>civic-ai-safety-notes"]:::release
+    publicFace["Foundation public face repos<br/>218-network-web planned<br/>foundation-governance scaffolded<br/>foundation-programs-public planned<br/>foundation-transparency-reports scaffolded"]:::foundation
+    aiCompanions["AI companion repos<br/>foundation-model-cards planned<br/>foundation-dataset-cards planned<br/>foundation-spaces planned<br/>civic-ai-safety-notes scaffolded"]:::release
     standards["Templates and standards<br/>foundation-doc-templates<br/>foundation-graph-kit<br/>foundation-public-roadmap"]:::public
     programDocs["Future technical public docs<br/>neurona-public-docs<br/>cleanup-data-public<br/>schools-public-docs"]:::foundation
   end
