@@ -2,68 +2,96 @@
 
 ## Purpose
 
-These Mermaid diagrams make the public account architecture visible without creating placeholder products, fake models, or unreviewed datasets. GitHub renders these diagrams directly in Markdown.
+These Mermaid diagrams make the K-ussade public account architecture visible without creating placeholder products, fake models, fake datasets, live deployment claims, or unreviewed Hugging Face releases.
 
 ## Account Surface Map
 
 ```mermaid
 flowchart LR
-  subgraph identity["Public Technical Identity"]
-    alexandra["Alexandra Caussade<br/>Founder: 218 Network Foundation<br/>Co-Founder: YOSO-YAi LLC<br/>Autonomous AI Operator<br/>Civic Governance Lead"]:::authority
-    profile["GitHub profile<br/>K-ussade"]:::public
+  subgraph person["Person And Public Account Surface"]
+    alexandra["Alexandra Caussade<br/>person, legal name, founder identity"]:::authority
+    profile["K-ussade<br/>public technical brand/account surface"]:::public
   end
 
-  subgraph foundationDomain["Foundation Public Surface"]
-    network["218.network"]:::foundation
+  subgraph foundation["218 Network Foundation"]
+    network["218.network<br/>Foundation public surface"]:::foundation
+    civicDocs["civic AI docs<br/>public-trust technical systems"]:::foundation
   end
 
-  subgraph boundaryRefs["Boundary References Only"]
+  subgraph company["YOSO-YAi LLC"]
     yoso["yoso-yai.com<br/>company surface"]:::company
     yosor["yosor.app<br/>YOSOR product surface"]:::product
   end
 
-  subgraph github["GitHub Public Repository Architecture"]
-    publicFace["Foundation public face repos<br/>218-network-web planned<br/>foundation-governance published scaffold<br/>foundation-programs-public published scaffold<br/>foundation-transparency-reports published scaffold<br/>foundation-public-reports published scaffold"]:::foundation
-    aiCompanions["AI companion repos<br/>foundation-model-cards published scaffold<br/>foundation-dataset-cards published scaffold<br/>foundation-spaces published scaffold<br/>civic-ai-safety-notes published scaffold<br/>foundation-huggingface-index published scaffold"]:::release
-    standards["Templates and standards<br/>foundation-doc-templates published scaffold<br/>foundation-graph-kit published scaffold<br/>foundation-public-roadmap published scaffold"]:::public
-    programDocs["Program technical public docs<br/>neurona-public-docs published scaffold<br/>cleanup-data-public published scaffold<br/>schools-public-docs published scaffold"]:::foundation
-    proofOps["Proof and agentic workflow repos<br/>foundation-portfolio-proof published scaffold<br/>autonomous-ai-ops-kit published scaffold<br/>research-agent-workflows published scaffold<br/>trading-agent-governance published scaffold"]:::public
-  end
-
-  subgraph hf["Hugging Face Release Surface"]
-    models["Planned models<br/>civic QA, NEURONA, cleanup,<br/>Spanish civic, school resources"]:::release
-    datasets["Planned datasets<br/>cleanup, municipio, Foundation docs,<br/>NEURONA samples, school resources"]:::release
-    spaces["Planned Spaces<br/>status, cleanup, map,<br/>docs assistant, school resources"]:::release
+  subgraph release["Release Readiness Surfaces"]
+    github["GitHub public repos<br/>published or scaffolded proof surfaces"]:::public
+    hf["Hugging Face<br/>planned until reviewed release exists"]:::release
   end
 
   alexandra --> profile
-  profile --> publicFace
-  profile --> aiCompanions
-  profile --> standards
-  profile --> programDocs
-  profile --> proofOps
-  publicFace --> network
-  aiCompanions -. cards and notes .-> models
-  aiCompanions -. cards and notes .-> datasets
-  aiCompanions -. companion code .-> spaces
-  standards --> publicFace
-  standards --> aiCompanions
-  programDocs -. release context .-> models
-  programDocs -. release context .-> datasets
-  programDocs -. demo context .-> spaces
-  proofOps -. review-required proof links .-> models
-  proofOps -. review-required proof links .-> datasets
-  proofOps -. review-required proof links .-> spaces
-  alexandra -. boundary reference .-> yoso
-  alexandra -. boundary reference .-> yosor
-  yoso -. distinct from Foundation .-> network
-  yosor -. product of YOSO-YAi .-> yoso
+  alexandra --> network
+  alexandra --> yoso
+  profile --> github
+  github --> civicDocs
+  github -. cards, indexes, and safety notes .-> hf
+  network -. independent from .-> yoso
+  yosor --> yoso
 
   classDef company fill:#e8f1ff,stroke:#2457a6,color:#0f2345;
   classDef product fill:#e6f7f1,stroke:#1f7a55,color:#0f3d2d;
   classDef foundation fill:#fff3d7,stroke:#9a6b00,color:#463100;
   classDef public fill:#edf7ed,stroke:#3a7d3a,color:#1f3d1f;
   classDef release fill:#f4edff,stroke:#6941c6,color:#2f1b63;
+  classDef authority fill:#eaf7ff,stroke:#027a9d,stroke-width:2px,color:#083344;
+```
+
+## Recommended Pin Map
+
+```mermaid
+flowchart TB
+  profile["K-ussade profile<br/>public technical surface"]:::authority
+
+  subgraph pins["Recommended Six Pins"]
+    graphKit["foundation-graph-kit<br/>Mermaid graph standards"]:::public
+    roadmap["foundation-public-roadmap<br/>status and release-readiness ledger"]:::public
+    safety["civic-ai-safety-notes<br/>safety, limits, claim review"]:::foundation
+    modelCards["foundation-model-cards<br/>future model-card readiness"]:::release
+    datasetCards["foundation-dataset-cards<br/>future dataset-card readiness"]:::release
+    aiOps["autonomous-ai-ops-kit<br/>supervised AI ops governance"]:::workflow
+  end
+
+  subgraph secondary["Secondary Proof Surfaces"]
+    research["research-agent-workflows<br/>research workflow discipline"]:::workflow
+    trading["trading-agent-governance<br/>governance only, no advice"]:::risk
+    portfolio["foundation-portfolio-proof<br/>future review-required proof index"]:::public
+    templates["foundation-doc-templates<br/>documentation templates"]:::public
+  end
+
+  subgraph plannedHf["Planned Hugging Face Artifacts"]
+    models["models<br/>planned until reviewed release"]:::release
+    datasets["datasets<br/>planned until reviewed release"]:::release
+    spaces["Spaces<br/>planned until reviewed release"]:::release
+  end
+
+  profile --> graphKit
+  profile --> roadmap
+  profile --> safety
+  profile --> modelCards
+  profile --> datasetCards
+  profile --> aiOps
+  profile -. visible but not first-six pins .-> research
+  profile -. visible but not first-six pins .-> trading
+  profile -. visible but not first-six pins .-> portfolio
+  profile -. visible but not first-six pins .-> templates
+  modelCards -. readiness docs only .-> models
+  datasetCards -. readiness docs only .-> datasets
+  roadmap -. status only .-> spaces
+
+  classDef public fill:#edf7ed,stroke:#3a7d3a,color:#1f3d1f;
+  classDef foundation fill:#fff3d7,stroke:#9a6b00,color:#463100;
+  classDef release fill:#f4edff,stroke:#6941c6,color:#2f1b63;
+  classDef workflow fill:#eaf7ff,stroke:#027a9d,color:#083344;
+  classDef risk fill:#fff1f2,stroke:#be123c,stroke-width:2px,color:#5f0715;
   classDef authority fill:#eaf7ff,stroke:#027a9d,stroke-width:2px,color:#083344;
 ```
 
@@ -74,13 +102,12 @@ flowchart LR
   subgraph allowed["Allowed Public Material"]
     publicDocs["Public Foundation docs"]:::public
     governanceDocs["Public governance docs"]:::public
-    reports["Public transparency reports"]:::public
-    programs["Public program descriptions"]:::public
+    roadmapDocs["Roadmap and status ledgers"]:::public
     civicRef["Public civic reference material"]:::public
     synthetic["Synthetic examples<br/>clearly labeled"]:::public
-    sanitized["Sanitized public samples<br/>approved only"]:::risk
     approvedCode["Open-source code<br/>approved for public release"]:::public
     cards["Model and dataset cards<br/>with limitations"]:::release
+    diagrams["Mermaid diagrams<br/>no private topology"]:::public
   end
 
   subgraph forbidden["Forbidden Public Material"]
@@ -100,27 +127,26 @@ flowchart LR
     autonomous["Live autonomous agents,<br/>runnable orchestration,<br/>private prompts or outputs"]:::sealed
   end
 
-  subgraph gate["Review Gate"]
+  subgraph gates["Review Gates"]
     boundary["Boundary review"]:::authority
     safety["Safety and limitations review"]:::risk
-    governance["Foundation governance review"]:::authority
+    governance["Human governance review"]:::authority
   end
 
   subgraph surfaces["Public Surfaces"]
-    github["GitHub public repos"]:::release
+    github["GitHub public repos"]:::public
     hf["Hugging Face releases"]:::release
     web["218.network"]:::foundation
   end
 
   publicDocs --> boundary
   governanceDocs --> boundary
-  reports --> boundary
-  programs --> boundary
+  roadmapDocs --> boundary
   civicRef --> boundary
   synthetic --> boundary
-  sanitized --> safety
   approvedCode --> boundary
   cards --> safety
+  diagrams --> boundary
   boundary --> governance
   safety --> governance
   governance --> github
@@ -151,13 +177,22 @@ flowchart LR
   classDef risk fill:#fff1f2,stroke:#be123c,stroke-width:2px,color:#5f0715;
 ```
 
-## Release Flow Index
+## Interpretation Notes
 
-| Flow | Source Of Truth |
-| --- | --- |
-| Model release flow | `repo-blueprint/account-surfaces/graphs/model-release-flow.md` |
-| Dataset release flow | `repo-blueprint/account-surfaces/graphs/dataset-release-flow.md` |
-| Space demo flow | `repo-blueprint/account-surfaces/graphs/space-demo-flow.md` |
-| GitHub to Hugging Face link map | `repo-blueprint/account-surfaces/graphs/github-to-huggingface-link-map.md` |
+- Alexandra Caussade is the person and founder identity; K-ussade is the public technical account surface.
+- The six recommended pins show public documentation infrastructure, status discipline, civic AI safety, Hugging Face release readiness, data governance, and supervised AI operations governance.
+- Research-agent and trading-agent governance repos remain visible proof surfaces but are secondary to reduce first-view claim risk.
+- Planned Hugging Face models, datasets, and Spaces remain planned until reviewed public artifacts exist.
 
-The public visuals intentionally show published scaffolds, planned architecture, and review gates. They do not claim that future models, datasets, Spaces, schools, NEURONAs, deployments, services, trading systems, or Foundation program operations are live.
+## Boundary Notes
+
+- The 218 Network Foundation is not YOSO-YAi LLC marketing, CSR framing, or product proof.
+- Public GitHub repositories are proof surfaces for documentation and governance discipline, not evidence of live deployments or active services.
+- Trading-agent governance documentation is not financial advice, not investment advice, not a trading bot, not a trading system, and not a performance claim.
+- Private Foundation operations, sealed YOSO-YAi LLC IP, customer data, donor data, student data, volunteer data, private training corpora, secrets, and security-sensitive NEURONA details stay outside public visuals.
+
+## Follow-Up Actions
+
+- Keep GitHub profile pins aligned with `PINNED_REPOS.md`.
+- Add Hugging Face links only after public artifacts, cards, release notes, safety notes, companion links, and review status exist.
+- Re-audit the first-view pins before any portfolio, Upwork, press, or partner-facing reuse.

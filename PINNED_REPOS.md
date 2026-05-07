@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This file is retained for the older pinned-repository filename. The current recommendation is also available in [PINNED_REPOS.md](PINNED_REPOS.md). Both files describe the same six-pin strategy for Alexandra Caussade's K-ussade public technical surface.
+This file defines the strongest first six GitHub pins for Alexandra Caussade's K-ussade public technical surface. The pins are selected to show public technical proof without implying live deployments, released Hugging Face artifacts, active services, financial advice, trading performance, schools, NEURONAs, or client outcomes.
 
 ## Final Recommended Six
 
